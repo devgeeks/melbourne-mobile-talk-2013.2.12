@@ -39,17 +39,17 @@
     <section>
         <h1>Setting up a Cordova build environment with some <font color="#ff9900">Grunt</font>
     </h1>
-    <div>Using the<span style="font: inherit; letter-spacing: -0.02em;">&nbsp;task-based build tool</span>
-    <span style="font: inherit; letter-spacing: -0.02em;">&nbsp;</span>
-    <font style="letter-spacing: -0.02em; line-height: 1.2em;" color="#ff9900">Grunt</font>
-    <span style="font: inherit; letter-spacing: -0.02em;">, the new&nbsp;</span>
-    <font style="letter-spacing: -0.02em; line-height: 1.2em;" color="#ff9900">Cordova</font>
-    <span style="font: inherit; letter-spacing: -0.02em;">&nbsp;command line tooling,</span>
-    <span style="font: inherit; letter-spacing: -0.02em;">&nbsp;and&nbsp;</span>
-    <font style="letter-spacing: -0.02em; line-height: 1.2em;" color="#ff9900">Jasmine</font>
-    <span style="font: inherit; letter-spacing: -0.02em;">&nbsp;tests running in&nbsp;</span>
-    <font style="letter-spacing: -0.02em; line-height: 1.2em;" color="#ff9900">PhantomJS</font>
-    <span style="font: inherit; letter-spacing: -0.02em;">&nbsp;to build better apps</span>
+    <div>Using the<span style="letter-spacing: -0.02em;">&nbsp;task-based build tool</span>
+    <span style="letter-spacing: -0.02em;">&nbsp;</span>
+    <font color="#ff9900" style="letter-spacing: -0.02em;line-height: 1.2em;">Grunt</font>
+    <span style="letter-spacing: -0.02em;">, the new&nbsp;</span>
+    <font color="#ff9900" style="letter-spacing: -0.02em;line-height: 1.2em;">Cordova</font>
+    <span style="letter-spacing: -0.02em;">&nbsp;command line tooling,</span>
+    <span style="letter-spacing: -0.02em;">&nbsp;and&nbsp;</span>
+    <font color="#ff9900" style="letter-spacing: -0.02em;line-height: 1.2em;">Jasmine</font>
+    <span style="letter-spacing: -0.02em;">&nbsp;tests running in&nbsp;</span>
+    <font color="#ff9900" style="letter-spacing: -0.02em;line-height: 1.2em;">PhantomJS</font>
+    <span style="letter-spacing: -0.02em;">&nbsp;to build better apps</span>
     <br>
 </div>
 </section>
@@ -116,14 +116,14 @@
         <font color="#ff9900">Why</font>?</h1>
         <div>
             <ul>
-                <li>Build automation</li>
-                <li>Continuous integration (Travis-CI, etc)</li>
-                <li style="">Xcode, Eclipse and friends are painful</li>
-                <li style="">Use your favourite text editor<br>
+                <li class="fragment">Build automation</li>
+                <li class="fragment">Continuous integration (Travis-CI, etc)</li>
+                <li class="fragment" style="">Test/behaviour driven development
                 </li>
-                <li style="">Multiple platforms, one code base</li>
-                <li style="">The command line is powerful</li>
-                <li style="">There are many great <a href="http://gruntjs.com/">
+                <li class="fragment" style="">Xcode, Eclipse and friends are painful</li>
+                <li class="fragment" style="">Multiple platforms, one code base</li>
+                <li class="fragment" style="">The command line is powerful</li>
+                <li class="fragment" style="">There are many great <a href="http://gruntjs.com/">
                     <font color="#ff9900">
                         <u>Grunt plugins</u>
                     </font>
@@ -162,7 +162,7 @@
 </li>
 </ul>
 <div style="text-align: center;">
-    <img width="230" src="http://www.richardsnotes.org/pictures/singer_ikea.gif">
+    <img src="http://www.richardsnotes.org/pictures/singer_ikea.gif" width="230">
     <br>
 </div>
 </div>
@@ -173,44 +173,58 @@
 <section>
     <h2>Just <font color="#ff9900">9</font>&nbsp;<font color="#ff9900">easy* steps</font>!</h2>
 <div>
-    <ol style="font-size:0.8em;">
-        <li>Install the 4 primary dependencies</li>
-        <li>Create a Cordova project<br>
+    <ol style="font-size: 0.7em;">
+        <li class="fragment">Install the 4 primary dependencies</li>
+        <li class="fragment">Create a Cordova project<br>
         </li>
-    <li>Add your Cordova platforms (iOS, Android, etc)</li>
-        <li>Create a <font face="courier new">
+<li class="fragment">Add your Cordova platforms (iOS, Android, etc)</li>
+        <li class="fragment">Create a <font face="courier new">
             <b>package.json</b>
 </font>&nbsp;file</li>
-            <li>Install the 3 grunt plugin npm modules and their deps</li>
-            <li>Initialise Grunt and create a <font face="courier new">
+            <li class="fragment">Install the 3 grunt plugin npm modules using <font face="courier new">--save-deps</font>
+</li>
+            <li class="fragment">Initialise Grunt and create a <font face="courier new">
                 <b>grunt.js</b>
                 </font> file</li>
-                <li>Hand edit the&nbsp;<font face="courier new">
-<span style="font: inherit;">
+                <li class="fragment">Hand edit the&nbsp;<font face="courier new">
+<span style="">
     <b>grunt.js</b>
 </span>
 </font>&nbsp;file and edit your src paths<br>
             </li>
-            <li>Hand edit the&nbsp;<font face="courier new">
-<span style="font: inherit;">
+            <li class="fragment">Hand edit the&nbsp;<font face="courier new">
+<span style="">
     <b>grunt.js</b>
 </span>
 </font>&nbsp;file and add your Jasmine tasks<br>
         </li>
-        <li>Hand edit the&nbsp;<font face="courier new">
-<span style="font: inherit;">
+        <li class="fragment">Hand edit the&nbsp;<font face="courier new">
+<span style="">
     <b>grunt.js</b>
 </span>
 </font>&nbsp;file and add your Cordova shell tasks</li>
 </ol>
-<div style="text-align: left;">
-    <span style="font-size: 29px;">
-        <br>
-    </span>
+<div>
 </div>
-<small style="text-align: center;">
-    * Easy is a relative term... are you scared of hand editing config files? &nbsp;Hope not.</small>
+<div>
+<span style="font-size: 0.5em;line-height: 1.2em;letter-spacing: -0.02em;">
+    <br>
+</span>
 </div>
+<div>
+<span style="font-size: 0.5em;line-height: 1.2em;letter-spacing: -0.02em;">* Easy is a relative term... are you scared of hand editing config files? &nbsp;Hope not.</span>
+<br>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
 
 
 </section>
@@ -221,7 +235,7 @@
     </h2>
 </section>
 <section>
-    <h2 style="font-size:2.3em;">The steps were so <font color="#ff9900">complex</font> I didn't even <font color="#ff9900">want</font> to write them up</h2>
+    <h2 style="font-size: 2.3em;">The steps were so <font color="#ff9900">complex</font> I didn't even <font color="#ff9900">want</font> to write them up</h2>
 <div>
     <br>
 </div>
@@ -257,47 +271,44 @@
 </section>
 <section>
     <section>
-        <h2>Now it's just 6&nbsp;<font color="#ff9900" style="font-size:1.2em;">actually</font> easy steps</h2>
+        <h2>Now it's just 6&nbsp;<font color="#ff9900" style="font-size: 1.2em;">actually</font> easy steps*</h2>
 <div>
-    <ol style="font-size:0.8em;">
-        <li>
-            <span style="letter-spacing: -0.02em; line-height: 1.2em;">Install the 4 primary dependencies</span>
+    <ol style="font-size: 0.8em;">
+        <li class="fragment">
+            <span style="letter-spacing: -0.02em;line-height: 1.2em;">Install the 4 primary dependencies</span>
             <br>
         </li>
-        <li style="font: inherit;">Create a Cordova project</li>
-        <li style="font: inherit;">Add your Cordova platforms (iOS, Android, etc)<br>
+        <li class="fragment" style="">Install the <u><a href="https://github.com/devgeeks/grunt-init-cordova"><font color="#ff9900">grunt-init-cordova</font></a></u>&nbsp;templates</li>
+        <li class="fragment" style="">Create a Cordova project</li>
+        <li class="fragment" style="">Add your Cordova platforms (iOS, Android, etc)<br>
         </li>
-        <li style="font: inherit;">Install the <u>
-<a href="https://github.com/devgeeks/grunt-init-cordova">
-            
-                <font color="#ff9900">grunt-init-cordova</font>
-</a>
-</u>&nbsp;templates</li>
-            <li style="font: inherit;">
-                <span style="line-height: 1.2em; letter-spacing: -0.02em;">Initialise Grunt with the templates above <span style="font-size:0.6em;">(answering a couple easy questions)</span>
+        
+            <li class="fragment">
+                <span style="line-height: 1.2em;letter-spacing: -0.02em;">Initialise Grunt with the templates above <span style="font-size: 0.6em;">(answering a couple of easy questions)</span>
 </span>
 <br>
             </li>
-            <li style="font: inherit;">Run <font face="courier new">
+            <li class="fragment">Run <font face="courier new">
 <b>npm install</b>
-    </font>&nbsp;to install all dependencies</li>
+</font>&nbsp;to install all dependencies</li>
 </ol>
 <div>
 <br>
 </div>
-<h2>
+<h2 class="fragment">
     <font color="#ff9900">THAT'S IT</font>! WE ARE <font color="#ff9900">READY TO ROLL</font>!</h2>
     </div>
 
+<div style="font-size:0.6em;">* The first step still sucks...</div>
 
 
 
 </section>
-    <section>
-        <h1>
-            <font color="#ff9900">Demo</font>
-        </h1>
-    </section>
+<section>
+    <h1>
+        <font color="#ff9900">Demo</font>
+    </h1>
+</section>
 </section>
 <section>
     <h1>
@@ -317,7 +328,7 @@
 </section>
         <section>
             <h1>
-    <font color="#ff9900">Thanks</font>
+    <font color="#ff9900">&nbsp;Thanks</font>
 </h1>
 <div>
     <br>
@@ -328,16 +339,17 @@
 </div>
 <div>Just kidding. *</div>
 <div>
-    <br>
+    &nbsp;&nbsp;
 </div>
 <div>
-    <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
 </div>
 <div style="font-size: 50.0%;line-height: 20.0px;">* I'm totally not kidding.</div>
 
 
 </section>
         </div>
+
 
 
 		<script src="lib/js/head.min.js"></script>

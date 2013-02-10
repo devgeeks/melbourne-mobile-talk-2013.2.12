@@ -1,5 +1,7 @@
 # Setting up a Cordova build environment with some Grunt
 
+[devgeeks.org/slides/melbourne-mobile-talk-2013.2.12](devgeeks.org/slides/melbourne-mobile-talk-2013.2.12)
+
 ## Slide Deck
 
 ## License
